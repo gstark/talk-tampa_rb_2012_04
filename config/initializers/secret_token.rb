@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-TampaRb201204::Application.config.secret_token = '882f6057c08f4c2cd5c7267caee95a4239f56c9ddc2b970b826e0ef861f25b1ba50066774cac2535208424c350a3884190618529d353833d6e3cd38dd0d1eb32'
+Demo::Application.config.secret_token = '182d254e2f8d6665a4ae64ccd64ce12474e9465d76ad2ae76fab6ffad91ff7ffb867a74f038de7d525f49401dca8aa472fcf44fd4cd9eb184c78344b735cde0c'

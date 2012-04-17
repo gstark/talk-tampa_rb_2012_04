@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-TampaRb201204::Application.load_tasks
+Demo::Application.load_tasks
