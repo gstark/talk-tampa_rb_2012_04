@@ -1,5 +1,10 @@
 class Coach < ActiveRecord::Base
-  belongs_to :team
+  has_many :teams
+  has_many :coaching_sessions
 
-  has_many :players, :through => :team
+  has_many :players, :through => :teams
+
+  def all_players
+    (players + coaching_sessions.map(&:players).flatten).uniq
+  end
 end
