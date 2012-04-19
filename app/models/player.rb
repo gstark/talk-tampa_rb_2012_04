@@ -3,3 +3,10 @@ class Player < ActiveRecord::Base
 
   has_one :coach, :through => :team
 end
+
+class PlayerWithCallbacks < Player
+  after_save { puts "after save" }
+end
+
+
+
